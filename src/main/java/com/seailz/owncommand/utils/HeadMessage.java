@@ -2,6 +2,7 @@ package com.seailz.owncommand.utils;
 
 import ChatMessageAPI.ImageChar;
 import ChatMessageAPI.ImageMessage;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import javax.imageio.ImageIO;
@@ -11,8 +12,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HeadMessage {
-    public HeadMessage(Player p) throws IOException {
-        URL url = new URL("https://mc-heads.net/avatar/" + p.getName());
+    public HeadMessage(CommandSender p) throws IOException {
+        Player player = (Player) p;
+        URL url = new URL("https://crafatar.com/avatars/" + ((Player) p).getUniqueId());
         BufferedImage imageToSend = ImageIO.read(url);
         new ImageMessage(
                 imageToSend, // the bufferedimage to send
@@ -25,7 +27,7 @@ public class HeadMessage {
                 "ur cute <3",
                 "i like your",
                 "face"
-        ).sendPlayer(p);
+        ).sendPlayer(player);
 
     }
 }

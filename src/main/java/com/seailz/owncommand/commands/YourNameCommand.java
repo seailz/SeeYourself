@@ -22,7 +22,7 @@ public class YourNameCommand extends Command {
             new Message("&cThis is your face :O").send(sender);
 
         } catch (IOException e) {
-             new Message("&cInternal error, please contact the owner! Here are the error details:", "&f- &c" + e.getMessage()).send(sender);
+             new Message("&cInternal error, please contact the owner! Here are the error details:", "&f\uD83E\uDC72 &c" + e.getMessage()).send(sender);
              e.printStackTrace();
         }
     }
