@@ -1,0 +1,7 @@
+name: OwnCommand
+version: '${project.version}'
+main: com.seailz.owncommand.OwnCommand
+api-version: 1.18
+authors: [ Seailz ]
+description: see yourslef with a command
+website: www.seailz.com
