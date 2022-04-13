@@ -1,6 +1,5 @@
 # SeeYourself
 
-View your face in chat by typing /yourname!
-thats it
-  enjoy
-  bye
+View yourself in chat by type /yourname
+
+For example, I would type /seailz
