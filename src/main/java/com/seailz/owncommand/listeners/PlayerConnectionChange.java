@@ -18,8 +18,10 @@ public class PlayerConnectionChange implements Listener {
     @EventHandler
     public void onConnect(PlayerJoinEvent e) {
         Command c = new YourNameCommand();
+        c.setDisabled(false);
         c.setName(e.getPlayer().getName());
         plugin.registerCommands(c);
+        plugin.getLogger().info("Registered command");
     }
     @EventHandler
     public void onDisconnect(PlayerQuitEvent e) {
