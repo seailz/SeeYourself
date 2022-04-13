@@ -18,6 +18,7 @@ public class PlayerConnectionChange implements Listener {
     @EventHandler
     public void onConnect(PlayerJoinEvent e) {
         Command c = new YourNameCommand();
+        if (c.isRegistered()) return;
         c.setDisabled(false);
         c.setName(e.getPlayer().getName());
         plugin.registerCommands(c);
