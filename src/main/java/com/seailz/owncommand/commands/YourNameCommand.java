@@ -14,7 +14,7 @@ public class YourNameCommand extends Command {
             new Message("&fUnknown command. Type \"/help\" for help.");
             return;
         }
-        PlayerHead.API.sendPlayerHeadAsync((Player) sender, 10, (Player) sender);
+        PlayerHead.API.sendPlayerHead((Player) sender, 10, (Player) sender);
         new Message("&cThis is your face :O").send(sender);
     }
 }

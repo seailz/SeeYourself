@@ -1,7 +1,6 @@
 name: OwnCommand
-version: '${project.version}'
+version: 1.1
 main: com.seailz.owncommand.OwnCommand
-api-version: 1.18
 authors: [ Seailz ]
 description: see yourslef with a command
 website: www.seailz.com
